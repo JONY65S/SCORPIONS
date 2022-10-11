@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+}
+
+.menuRB {
+    /*top: 500px;*/ 
+    position: absolute; 
+    left:0; 
+    right:0;
+ 
+    margin:20px auto;
+    max-width:1000px;
+    width:90%;
+    bottom: 20px;
+}
+
+.menuRB ul {
+    list-style: none;
+}
+
+.menuRB > ul {
+    display: table;
+    width: 85%;
+    background: #876E13;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    transform: translate(9%, 0%);
+    
+}
+
+.nav-bar{
+    display: none;
+}
+
+.menuRB > ul li {
+    display: table-cell;
+}
+
+.menuRB > ul > li:hover > ul {
+    display: block;   
+}
+
+.menuRB > ul > li > ul {
+    display: block;
+    position:absolute;
+    background: #000;
+    border-radius: 0px 0px 20px 20px;   
+}
+
+.menuRB > ul > li > ul {
+    display:none;
+}
+
+.menuRB > ul li a {
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -mz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+.menuRB > ul >li > ul > li a:hover {
+    background:#D2B4DE;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+
+.menuRB > ul >li > a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -mz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+
+
+
+
+.menuRB > ul >li > a span .icon {
+    display: block;
+    line-height: 60px; 
+}
+
+.menuRB > ul > li > a:hover > span {
+    top: 0;
+    
+}
+
+
+
+.menuRB ul li a .first {
+   background: #2e406e;
+   border-radius: 0px 0px 0px 8px;
+}
+
+.menuRB ul li a .second {
+   background: #339dc5; 
+}
+
+.menuRB ul li a .third {
+   background: #1DB954; 
+}
+
+.menuRB ul li a .fourth {
+   background: #FCAF45;
+}
+
+.menuRB ul li a .fifth {
+   background: #2E86C1;
+   border-radius: 0px 0px 8px 0px; 
+}
+
+
+
+@media (max-width:480px){ 
+
+    .nav-bar{
+    position: fixed;
+    right: 0;
+    top: 15%;
+    font-size:1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    }
+
+    .icond {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s; 
+    }
+
+    .menuRB{
+        display: none;
+    }
+
+    .icon-book {
+        background: #2e406e;
+    }
+
+    .icon-file-text2 {
+        background: #339dc5;
+    }
+
+    .icon-mic {
+        background: #1DB954;
+    }
+
+    .icon-stack {
+        background: #FCAF45;
+    }
+
+    .icon-key {
+        background: #2E86C1;
+    }
+
+    .icond:first-child{
+        border-radius: 1rem 0 0 0;
+    }
+
+    .icond:last-child{
+        border-radius: 0 0 0 1rem;
+    }
+
+
+
+}
+

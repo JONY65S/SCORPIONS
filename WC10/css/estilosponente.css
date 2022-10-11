@@ -1,0 +1,245 @@
+
+   /*Rectangulo de botones*/
+    .rectangulo{
+
+        width: 1280px;
+        height: 300px;
+        background-color:transparent;
+        top: 25%;
+        left: 30%;
+        position: relative;
+        transform: translate(-30%, -40%);
+        box-sizing: border-box;
+        padding: 20px 20px;
+        border-radius: 9px;
+        margin-top: 150px;
+        border: 0.35em solid #876E13;
+            }
+            @media (max-width: 768px){
+            
+              .rectangulo {
+                position: relative;
+                background: transparent;              
+                margin-top: 12px;
+                margin-left: 10px;
+                width: 90%;
+                height: 90%;
+                top: 300px;
+  	
+              }
+             
+            }
+
+
+#btn-menu2{
+	display: none;
+}
+
+
+.menu2 ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.menu2 li{
+	text-align: center;
+	flex-grow: 1;
+}
+
+.menu2 li:hover {
+    background:  rgb(135, 110, 19);	
+}
+
+.menu2 li a{
+	display:  block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+img.alineadoicono{
+  vertical-align: middle;
+}
+
+.menu2 {
+
+	background:  #333333;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	
+}
+
+
+
+
+@media (max-width: 768px){
+  header label{
+  	display: block;
+  } 
+  .menu2 {
+  	position: absolute;
+  	background:  #333333;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s; 
+
+  }
+  .menu2 ul {
+    flex-direction: column;
+  }
+  .menu2 li{
+  	border-top: 1px solid #fff;
+  }
+  #btn-menu2:checked ~.menu2 {
+  	margin: 0;
+  }
+
+}
+
+/*CREDITOS*/
+    .creditos_padre{
+      
+              width: 100%;
+              height: 50%;
+              background-color:#333333;
+              position: relative;
+              top: 115%;
+              left: 0%;
+             margin: 0;
+        
+             
+            }
+
+          .creditos{
+                    position:absolute;
+                    background-color: #333333;
+                    padding: 10 px;
+                    width: 600px;
+                    height: 100px;
+                    top: 20px ;
+                    bottom: 0px;
+                    left:300px;
+                    right: 0px;
+                      
+                          }
+                          .creditos p{
+                            text-align: center;
+                            color: white;
+                            font-family: 'Century Gothic', sans-serif;
+                            font-size: 12px;
+                          }
+                        
+                        
+        @media (max-width: 768px){
+          
+          .creditos_padre {
+            position: absolute;
+            width: 110%;
+            height: 32%;
+            top: 163%;
+            right: -5%;
+            left: -5%;
+          }
+          
+          .creditos_padre li{
+            min-width: 100%;
+            min-height: 35%;
+          }
+          .creditos {     
+            width: 100%;
+            height: 50%;
+            top: 5%;
+            left: auto;
+            position: relative;
+          }
+        
+        }              
+    /* CONTACTOS*/
+    .contacto_padre{
+      
+      width: 100%;
+      height: 100%;
+      background-color:#333333;
+      position: relative;
+      top: 130% ;
+      left: 0%;
+     margin: 0;
+
+    }
+    .contacto_padre img{
+      position:absolute;
+        height: 150px;
+        width: 130px;
+        top: 50px ;
+        left: 50px;
+        
+      }   
+
+  .contacto{
+            position:absolute;
+            background-color: #333333;
+            padding: 10 px;
+            width: 600px;
+            height: 200px;
+            top: 35px ;
+            bottom: 0px;
+            left:300px;
+            right: 0px;
+              
+                  }
+                  
+                  .contacto h1{
+                    text-align:left;
+                    color: white;
+                    font-family: 'Century Gothic', sans-serif;
+                    font-size: 14px;
+                  }
+                  .contacto h2{
+                    text-align:left;
+                    color: white;
+                    font-family: 'Century Gothic', sans-serif;
+                    font-size: 13px;
+                  }
+                  .contacto p{
+                    text-align: left;
+                    color: white;
+                    font-family: 'Century Gothic', sans-serif;
+                    font-size: 12px;
+                  }
+                          
+                
+@media (max-width: 768px){
+  
+  .contacto_padre {
+    position: absolute;
+    width: 110%;
+    height: 55%;
+    top: 110%;
+    right: -5%;
+    left: -5%;
+  }
+  .contacto_padre img{
+    position:absolute;
+      height: 65px;
+      width: 55px;
+      top: 25px ;
+      left: 15px;
+      
+    }   
+  .contacto_padre li{
+    min-width: 100%;
+    min-height: 35%;
+  }
+  .contacto {     
+    width: 75%;
+    height: 40%;
+    top: 5%;
+    left: 18%;
+    position: relative;
+  }
+ 
+}
+
+
