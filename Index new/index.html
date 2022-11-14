@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Navigation Bar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <img src="src/banpru.jpg" alt="" class="banner">
+</header>
+	
+<div class="wrapper">
+	<div class="navbar" >
+	
+		<div class="inner_navbar"  style="z-index: 3;">
+			<div class="logo">
+				
+			</div>
+			<div class="menu"  style="z-index: 3;">
+				<ul>
+					<li><a href="#" class="active">Inicio</a></li>
+					<li><a href="#">Memorias</a></li>
+					<li><a href="#">Convocatoria</a></li>
+					<li><a href="#">Inscripción</a></li>
+					<li><a href="#">Comité Organizador</a></li>
+					<li><a href="#">Iniciar Sesión</a></li>
+				</ul>
+			</div>
+			
+			<div class="menu" style="z-index: 3;">
+				<ul>
+					<li><a href="#">Carteles</a></li>
+					<li><a href="#">Ponencias</a></li>
+					<li><a href="#">Talleres</a></li>
+				</ul>
+			</div>
+			
+			<div class="menuRB" style="z-index: 1;">
+        <ul>
+          <li><a href="#"><span class="first"><i class="icon-book"></i></span>Alumno</a></li>
+          <li><a href="#"><span class="second"><i class="icon-file-text2"></i></span>Ponente</a></li>
+          <li><a href="#"><span class="third"><i class="icon-mic"></i></span>Evaluador</a></li>
+          <li><a href="#"><span class="fourth"><i class="icon-stack"></i></span>Memorias</a></li>
+          <li><a href="#"><span class="fifth"><i class="icon-key"></i></span>Admin</a></li>
+        </ul>
+        </div>
+			
+		</div>
+		<div class="hamburger">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
+
+	<div class="main_container">
+		<div class="content">
+			
+				<div class="item">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quo nobis, repellat, beatae architecto maiores veniam laboriosam adipisci libero tempore et modi eius eaque sit! Accusamus in esse eveniet nihil nobis incidunt, eius illum cum vitae repudiandae facilis consectetur saepe molestiae ut optio quae mollitia. Illum corporis tempore esse, minima.
+				</div>
+			</div>
+		
+	</div>
+</div>
+
+<script>
+	var hamburger = document.querySelector(".hamburger");
+	var menu = document.querySelector(".menu");
+
+	hamburger.addEventListener("click", function(){
+		menu.classList.toggle("active");
+	})
+</script>
+
+<footer>
+    <img src="src/escudo-blanco.png" alt="" class="footlog">
+    <div class="footer-content">
+        <h3>CONTACTO</h3>
+        <p class="footer_1">
+            SEDE
+            <br>
+            Facultad de Estudios Superiores Cuautitlán
+            <br><br>
+            UBICACIÓN
+            <br>
+            Km 2.5 carretera Cuautitlán-Teoloyucan, San Sebastián Xhala, Cuautitlán Izcalli;, Estado de México. C.P. 54714.
+            <br><br>
+            TELÉFONO
+            <br>
+            (55) 56 23 18 86 / (55) 56 23 18 90
+            <br><br>
+            Para mayores informes o dudas comunicarse al Departamento de Matemáticas Edificio A8 Campo 4.
+            <br><br>
+        </p>
+        <div class="footer-bottom">
+           <p>
+                Hecho en México, todos los derechos reservados 2014-2022. &copy;
+                <br>
+                Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma requiere permiso previo por escrito de la institución.
+                <br>
+                Sitio Web administrado por: Departamento de Matemáticas
+               </p>
+          </div>
+    </div>
+</footer>
+
+</body>
+</html>
